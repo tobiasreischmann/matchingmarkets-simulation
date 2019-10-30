@@ -1,0 +1,5 @@
+matchingmarkets:
+  image: matchingmarkets 
+  volumes:
+    - ./run:/opt/run
+  command: Rscript /opt/run/formula.r

@@ -1,0 +1,11 @@
+code/daresults/
+.Rproj.user/
+code/.Rproj.user/
+code/.git/
+.git/
+.gitmodules
+run/daresults/
+run/results*
+run/daresults*
+code/*.tar.gz
+
