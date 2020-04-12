@@ -6,6 +6,6 @@ code/.git/
 .gitmodules
 run/daresults/
 run/results*
-run/daresults*
+run/daresults/*
 code/*.tar.gz
 

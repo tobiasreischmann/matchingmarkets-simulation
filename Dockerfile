@@ -10,10 +10,15 @@ RUN echo "install.packages(\"Rcpp\", repos=\"https://cran.rstudio.com\")" | R --
  echo "install.packages(\"lpSolve\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"partitions\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"RcppArmadillo\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
- echo "install.packages(\"rlist\", repos=\"https://cran.rstudio.com\")" | R --no-save
+ echo "install.packages(\"rlist\", repos=\"https://cran.rstudio.com\")" | R --no-save 
+RUN echo "install.packages(\"digest\", repos=\"https://cran.rstudio.com\")" | R --no-save
 
 ADD /code /app 
 RUN cd /app && \
+  R CMD build --no-build-vignettes --no-manual . && \
+  R CMD INSTALL .
+ADD /matchingMarketsEvaluation /evaluation
+RUN cd /evaluation && \
   R CMD build --no-build-vignettes --no-manual . && \
   R CMD INSTALL .
 
