@@ -25,27 +25,27 @@ p6 <- generate("rankinglength_configuration", "Length of childrens ranking lists
 p7 <- generate("size_configuration", "Market size (no. of applications / no. of programmes)", c("occupancyrate", "quota"),maxy=18)
 p8 <- generate("horizontal_configuration", "Preference Scenario", c("occupancyrate", "quota", "nStudents", "nColleges", "conf.s.prefs"),maxy=28)
 
-pdf("plot1.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot1.pdf",width = 6, height = 4, pointsize = 14)
 p1
 dev.off()
-pdf("plot2.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot2.pdf",width = 6, height = 4, pointsize = 14)
 p2
 dev.off()
-pdf("plot3.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot3.pdf",width = 6, height = 4, pointsize = 14)
 p3
 dev.off()
-pdf("plot4.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot4.pdf",width = 6, height = 4, pointsize = 14)
 p4
 dev.off()
-pdf("plot5.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot5.pdf",width = 6, height = 4, pointsize = 14)
 p5
 dev.off()
-pdf("plot6.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot6.pdf",width = 6, height = 4, pointsize = 14)
 p6
 dev.off()
-pdf("plot7.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot7.pdf",width = 6, height = 4, pointsize = 14)
 p7
 dev.off()
-pdf("plot8.pdf",width = 6, height = 4, pointsize = 14)
+pdf("plots/plot8.pdf",width = 6, height = 4, pointsize = 14)
 p8
 dev.off()
