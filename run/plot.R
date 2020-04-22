@@ -1,12 +1,11 @@
 require(parallel)
 require(matchingMarkets)
 require(matchingMarketsEvaluation)
-require(tikzDevice)
 
 generate <- function(configuration, label, relevantForLegend = NULL,maxy=14) {
   cl <- call(configuration)
   eval(cl)
-  data <- calculateScenarios(rows)
+  data <- calculateScenarios(rows,seed=42)
   for (i in 1:length(data)) {
     for (j in 1:length(data[[i]])) {
       if (!is.numeric(data[[i]][[j]]) && !is.null(data[[i]][[j]])) {

@@ -18,7 +18,7 @@ require(parallel)
 generate <- function(configuration) {
   cl <- call(configuration)
   eval(cl)
-  calculateScenarios(rows)
+  calculateScenarios(rows, seed=42)
 }
 
 generate("horizontal_configuration")
