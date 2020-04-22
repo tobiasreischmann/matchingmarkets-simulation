@@ -24,4 +24,4 @@ RUN cd /evaluation && \
 
 FROM matchingMarkets
 ADD /run /opt/run
-CMD R < /opt/run/formula.r --vanilla
+CMD R < /opt/run/run.R --vanilla
