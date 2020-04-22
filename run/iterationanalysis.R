@@ -51,12 +51,9 @@ type <- as.vector(rep(rownames(iterationtable),entries))
 values <- as.vector(iterationtable*y)
 data <- data.frame(iteration,type,values)
 
-require(tikzDevice)
-
 ggplot(data=data, aes(fill=factor(type, levels=c("new","altered","unchanged")), x=iteration, y=values)) +
   geom_bar(position="stack", stat="identity", width=.8)  +
-#  scale_fill_grey(start = 0.45, end = 0.8, labels = c("unmatched","temporary","final")) +
-  scale_fill_brewer(palette = "BrBG", labels = c("unmatched","temporary","final")) +
+  scale_fill_grey(start = 0.45, end = 0.8, labels = c("unmatched","temporary","final")) +
   xlab("Number of iterations") +
   ylab("Places") +
   #ggtitle("Matching after X iterations in comparison to a full DA run") +
@@ -78,6 +75,6 @@ ggplot(data=data, aes(fill=factor(type, levels=c("new","altered","unchanged")), 
     legend.box.just = "right",
     legend.margin = margin(6, 6, 6, 6)
   ) +
-ggsave("./plots/iterationanalysis.tikz", scale=.85, width=7, height = 5, device = tikz,sanitize=TRUE)
+ggsave("./plots/iterationanalysis.pdf", scale=.85, width=7, height = 5)
 
 
