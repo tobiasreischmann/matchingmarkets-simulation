@@ -4,8 +4,9 @@ code/.Rproj.user/
 code/.git/
 .git/
 .gitmodules
-run/daresults/
-run/results*
-run/daresults/*
+data/
+data/*
 code/*.tar.gz
+matchingMarketsEvaluation/*.tar.gz
+matchingMarketsEvaluation/.git/
 
