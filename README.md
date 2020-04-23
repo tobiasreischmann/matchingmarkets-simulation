@@ -5,7 +5,7 @@ This package includes scripts to run and reproduce multiple simulations for diff
 To build the files you can either use the possibility to install the packages on your system directly or you can use the docker container.
 The project uses c++ and RJava so multiple programmes and libraries are necessary to run it.
 The docker container already ships all necessary packages.
-Especially, if you want to repoduce all simulations (see \ref) you should deploy the project on a machine with multiple cores.
+Especially, if you want to repoduce all simulations (see [stored data](#stored-data)) you should deploy the project on a machine with multiple cores.
 Due to the huge amount of markets generated, the code might still run for multiple hours or days.
 
 ## Intitialize the repository
@@ -48,6 +48,8 @@ So if you want to recalculate these values, you have to delete the files from da
 The filenames are hashes geneareted from the actual scenario configuration.
 So if you change the configurations, the new scenarios will be calculated nevertheless.
 
+The file `run.R` can be used to calculate all data if the data folder is empty.
+
 ## Files
 
 There are three files within `/run`.
@@ -55,6 +57,8 @@ There are three files within `/run`.
 ### run.R
 
 This file executes and calculates all scenarios necessary for the later generation of the plots.
+Depending on your machine, this can run hours or days, if no cached data is available.
+If all data is cached, this will do nothing.
 
 ### iterationanalysis.R
 
