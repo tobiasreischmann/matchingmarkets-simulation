@@ -32,14 +32,10 @@ For instance:
 
 If you want to use docker you can simply call:
 
-`docker build -t matchingmarkets .`
-
-It will build the docker container and provide it under the name `matchingmarkets`.
-Afterwards, you can run the container using:
-
 `./docker-compose up -d`
 
-The script you want to run can be altered within the `docker-compose.yml`.
+It will download the docker image and start the R-script provided within docker-compose.yml.
+If another script should be run, you can alter it within the `docker-compose.yml`.
 
 ## Stored data
 
