@@ -3,4 +3,4 @@
 	url = https://github.com/tobiasreischmann/matchingMarkets.git
 [submodule "matchingMarketsEvaluation"]
 	path = matchingMarketsEvaluation
-	url = https:github.com/tobiasreischmann/matchingMarketsEvaluation.git
+	url = https://github.com/tobiasreischmann/matchingMarketsEvaluation.git
