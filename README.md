@@ -26,7 +26,7 @@ It will automatically install all required R-packages, build the two requiered p
 Afterwards, you can run the scripts within the folder `run/`, which will repoduce the results.
 For instance:
 
-`Rscript run/run.R
+`Rscript run/run.R`
 
 ## Build using docker
 
