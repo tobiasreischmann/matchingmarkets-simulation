@@ -3,4 +3,5 @@ matchingmarkets:
   volumes:
     - ./run:/opt/run
     - ./data:/data
+    - ./plots:/plots
   command: Rscript /opt/run/run.R
