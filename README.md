@@ -39,6 +39,8 @@ Afterwards, you can run the container using:
 
 `./docker-compose up -d`
 
+The script you want to run can be altered within the `docker-compose.yml`.
+
 ## Stored data
 
 Both methods will cache calculated values within the data folder.
