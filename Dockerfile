@@ -39,11 +39,10 @@ RUN apt-get update && \
 RUN echo "install.packages(\"Rcpp\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"RcppProgress\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"lpSolve\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
+ echo "install.packages(\"partitions\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"RcppArmadillo\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"rlist\", repos=\"https://cran.rstudio.com\")" | R --no-save && \
  echo "install.packages(\"digest\", repos=\"https://cran.rstudio.com\")" | R --no-save
-RUN wget http://cran.r-project.org/src/contrib/Archive/partitions/partitions_1.9-19.tar.gz && \
-    R CMD INSTALL partitions_1.9-19.tar.gz
 
 ADD /code /app 
 RUN cd /app && \
