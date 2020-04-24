@@ -32,7 +32,7 @@ For instance:
 
 If you want to use docker you can simply call:
 
-`./docker-compose up`
+`docker-compose up`
 
 It will download the docker image and start the R-script provided within docker-compose.yml.
 If another script should be run, you can alter it within the `docker-compose.yml`.
