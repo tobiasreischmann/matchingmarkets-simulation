@@ -1,5 +1,5 @@
 matchingmarkets:
-  image: matchingmarkets 
+  image: tobiasreischmann/matchingmarkets-simulation 
   volumes:
     - ./run:/opt/run
     - ./data:/data
